@@ -1,28 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <layout />
+    <!-- <modal name="hello-world">
+          <button @click="hide()">click</button>
+    </modal>
+    <button @click="show()">click</button> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import layout from '@/components/layout.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    layout,
+  },
+  methods: {
+  show () {
+    this.$modal.show('hello-world');
+  },
+  hide () {
+    this.$modal.hide('hello-world');
   }
-}
+},
+  name: "App"
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "assets/styles/tailwind.postcss";
 </style>

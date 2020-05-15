@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "vuepress": "^1.4.1"
+  },
+  "dependencies": {
+    "vue-mailchimp-subscribe": "^1.1.0"
   }
 }

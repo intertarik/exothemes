@@ -5,7 +5,7 @@
         <div v-for="template in templates" :key="template.id">
           <productCard @click.native="showModal(template.id)" :data="template" class="mb-8 md:mb-0 cursor-pointer" />
         </div>
-        <modal :width="430"  height="auto" :class="'modalClass'" :scrollable="true" name="productModal" @before-open="beforeOpen">
+        <modal :width="700"  height="auto" :class="'modalClass'" :scrollable="true" name="productModal" @before-open="beforeOpen">
           <productModal :templateId="templateIdInModal" />
         </modal>
       </div>
@@ -59,6 +59,6 @@ export default {
 
 <style scoped>
 .modalClass {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 </style>

@@ -31,8 +31,8 @@
       <span v-if="template.data.shopify" class="inline-block px-1 py-1 text-sm text-gray-700">Shopify</span>
     </div>
     <div class="w-full bg-envato hover:bg-green-600 transition ease-in-out duration-200">
-        <prismic-link :field="template.data.purchase" class=" px-6 py-4 w-full text-center text-white font-mont text-lg font-medium inline-block ">
-          Purchase
+        <prismic-link :field="template.data.purchase" class=" px-6 py-4 w-full text-center text-white font-mont text-lg font-medium inline-block">
+         <img src="@/assets/img/envato_button.svg" class="inline-block w-4 mr-2" alt="">  <span class="inline-block" >Purchase</span>
         </prismic-link>
     </div>
   </div>

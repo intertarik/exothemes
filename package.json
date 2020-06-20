@@ -15,6 +15,7 @@
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "epic-spinners": "^1.1.0",
+    "gsap": "^3.2.6",
     "lodash": "^4.17.15",
     "prismic-dom": "^2.2.3",
     "prismic-javascript": "^2.7.1",
